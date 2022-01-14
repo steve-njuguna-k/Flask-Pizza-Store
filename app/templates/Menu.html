@@ -17,7 +17,9 @@
                         <ul class="navbar-nav mr-auto">
                         </ul>
                             <a class="nav-link" href="{{ url_for('menu') }}">Our Menu</a>
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                            <a href="{{ url_for('login') }}">
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                            </a>
                             <a href="{{ url_for('register') }}">
                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Register</button>
                             </a>
@@ -37,8 +39,65 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body" style="color: white;">
-                            <h2 class="card-title">Pepperoni Ksh. 1200.00</h2>
+                            <h2 class="card-title">Pepperoni Ksh. 1000.00</h2>
                             <p class="card-text">The perfect combination between Pepperoni and Cheese, with a great flavor and baked at the moment.</p>
+                            <p class="card-text">
+                                <a href="#" type="button" class="btn" style="color: white; background-color:#000;" onMouseOut="this.style.backgroundColor='#000'"onMouseOver="this.style.backgroundColor='#000'">
+                                    Add To Cart
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="{{ name }}" style="max-width: 100vw; background-color: #333;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://pizza-pizza-store.herokuapp.com/static/images/menu/Queso.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="color: white;">
+                            <h2 class="card-title">Cheese Ksh. 1100.00</h2>
+                            <p class="card-text">The pizza for cheese lovers. Mozzarella cheese, cream cheese, cheddar cheese, Parmesan cheese.</p>
+                            <p class="card-text">
+                                <a href="#" type="button" class="btn" style="color: white; background-color:#000;" onMouseOut="this.style.backgroundColor='#000'"onMouseOver="this.style.backgroundColor='#000'">
+                                    Add To Cart
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-3" id="{{ name }}" style="max-width: 100vw; background-color: #333;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://pizza-pizza-store.herokuapp.com/static/images/menu/Deluxe.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="color: white;">
+                            <h2 class="card-title">Deluxe Ksh. 1200.00</h2>
+                            <p class="card-text">Enjoying this pizza is a luxury. Pepperoni, ground beef, mushrooms, bell pepper, onion.</p>
+                            <p class="card-text">
+                                <a href="#" type="button" class="btn" style="color: white; background-color:#000;" onMouseOut="this.style.backgroundColor='#000'"onMouseOver="this.style.backgroundColor='#000'">
+                                    Add To Cart
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="{{ name }}" style="max-width: 100vw; background-color: #333;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://pizza-pizza-store.herokuapp.com/static/images/menu/Deluxe.png" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="color: white;">
+                            <h2 class="card-title">Vegetarian Ksh. 1300.00</h2>
+                            <p class="card-text">Only vegetables! Our meatless option. Bell pepper, mushrooms, olives, onion.</p>
                             <p class="card-text">
                                 <a href="#" type="button" class="btn" style="color: white; background-color:#000;" onMouseOut="this.style.backgroundColor='#000'"onMouseOver="this.style.backgroundColor='#000'">
                                     Add To Cart
