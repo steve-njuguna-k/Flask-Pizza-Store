@@ -1,17 +1,46 @@
 {% extends "Base.html" %}
         
     {% block content %}
-    <div id = "about">
-         <h2>ABOUT US</h2>
-         <P>Pizza Store has been in bussiness for over 5 years with five branches in Kenya. 
-            We offer unique services and also home delivery services for all pizza orders. 
-            Keep your family,friends and collegues closer by ordering our finest varieties and 
-            have a taste of heaven. We are happy to serve you with our top notch services.</P>
+
+    {% block navbar %}
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+                <div class="container">
+                    <a href="{{ url_for('home') }}">
+                        <h4 class="logo"><span class="logo-colour"><i class="fad fa-pizza fa-lg"></i></span><b> Pizza</b><span class="logo-colour">Store</span></h4>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                            <a class="nav-link" href="#">Our Menu</a>
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                            <a href="{{ url_for('register') }}">
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Register</button>
+                            </a>
+                      </div>
+                </div>
+            </nav>
+        </div>
+        {% endblock %}
+    
+
+    <div class="container">
+        <div id = "about" class="text-center">
+            <h2>ABOUT US</h2>
+            <P>Pizza Store has been in bussiness for over 5 years with five branches in Kenya. 
+               We offer unique services and also home delivery services for all pizza orders. 
+               Keep your family,friends and collegues closer by ordering our finest varieties and 
+               have a taste of heaven. We are happy to serve you with our top notch services.</P>
+        </div>
     </div>   
 
     <div id = "menu">
+        <h3 class="text-center">OUR MENU</h3>
         <div class = "row">
-             <h3>OUR MENU</h3>
              <div class= "col-sm-3">
                 <h3>pizza type</h3>
                 <ol>
