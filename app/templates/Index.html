@@ -7,7 +7,7 @@
             <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
                 <div class="container">
                     <a href="{{ url_for('home') }}">
-                        <h4 class="logo"><span class="logo-colour"><i class="fad fa-pizza fa-lg"></i></span><b> Pizza</b><span class="logo-colour">Store</span></h4>
+                        <h4 class="logo"><span class="logo-colour"><i class="fad fa-pizza fa-lg"></i></span><b> Pizza</b><span class="logo-colour">TamTam</span></h4>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -18,10 +18,10 @@
                         </ul>
                             <a class="nav-link" href="{{ url_for('menu') }}">Our Menu</a>
                             <a href="{{ url_for('login') }}">
-                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                                <button class="btn btn-outline-light" type="submit">Login</button>
                             </a>
                             <a href="{{ url_for('register') }}">
-                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Register</button>
+                                <button class="btn btn-outline-light" type="submit">Register</button>
                             </a>
                       </div>
                 </div>
@@ -32,6 +32,7 @@
 
     <div class="container landing">
         <div id = "about" class="text-center">
+            <i class="fas fa-pizza-slice fa-10x" style="margin-bottom: 20px;"></i>
             <h1 class="landing-text">The <span class="highlighted">TRUE</span> Home of Pizza</h1>
             <P>Pizza Store has been in bussiness for over 5 years with five branches in Kenya. 
                We offer unique services and also home delivery services for all pizza orders. 
@@ -39,7 +40,7 @@
                have a taste of heaven. We are happy to serve you with our top notch services.</P>
         </div>
 
-        <button class="btn btn-lg btn-outline-light">Order Now</button>
+        <button class="btn btn-lg btn-orange">Order Now</button>
     </div>   
 
     {% endblock %}
