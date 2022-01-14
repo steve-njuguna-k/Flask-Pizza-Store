@@ -1,10 +1,13 @@
 body{
     background-color: black;
     color: #fff;
-	border: 70px outset;    
     text-align: center;
-	min-height: 700px;
-   
+    font-family: "Croissant One", Arial, sans-serif;
+}
+
+.body{
+    min-height: 635px;
+    border: 2px outset;
 }
 
 a{
@@ -23,6 +26,7 @@ h4{
 
 .navbar{
     background-color: #000;
+    border: 2px outset;
 }
 
 .signup-form {
@@ -116,4 +120,20 @@ h4{
 .btn{
     margin-left: 5px;
     border-radius: 0px;
+}
+
+.landing{
+    margin-top: 230px;
+}
+
+.landing-text{
+    font-size: 72px;
+}
+
+.highlighted{
+    color: #ff4a00;
+}
+
+.page-title{
+    margin-top: 80px;
 }

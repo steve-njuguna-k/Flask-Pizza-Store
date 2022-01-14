@@ -16,8 +16,10 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                         </ul>
-                            <a class="nav-link" href="#">Our Menu</a>
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                            <a class="nav-link" href="{{ url_for('menu') }}">Our Menu</a>
+                            <a href="{{ url_for('login') }}">
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+                            </a>
                             <a href="{{ url_for('register') }}">
                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Register</button>
                             </a>
@@ -25,56 +27,19 @@
                 </div>
             </nav>
         </div>
-        {% endblock %}
+    {% endblock %}
     
 
-    <div class="container">
+    <div class="container landing">
         <div id = "about" class="text-center">
-            <h2>ABOUT US</h2>
+            <h1 class="landing-text">The <span class="highlighted">TRUE</span> Home of Pizza</h1>
             <P>Pizza Store has been in bussiness for over 5 years with five branches in Kenya. 
                We offer unique services and also home delivery services for all pizza orders. 
                Keep your family,friends and collegues closer by ordering our finest varieties and 
                have a taste of heaven. We are happy to serve you with our top notch services.</P>
         </div>
+
+        <button class="btn btn-lg btn-outline-light">Order Now</button>
     </div>   
 
-    <div id = "menu">
-        <h3 class="text-center">OUR MENU</h3>
-        <div class = "row">
-             <div class= "col-sm-3">
-                <h3>pizza type</h3>
-                <ol>
-                    <li>Chiken Tikka</li>
-                    <li>Peri-Peri Chiken</li>
-                    <li>Pepperoni</li>
-                    <li>Hawaiian</li>
-                    <li>Chicken&Mushroom</li>
-                </ol>
-
-             </div>
-             <div class ="col-sm-3">
-                <h4>pizza sizes</h4>
-                <ol>
-                    <li>Small @sh550</li>
-                    <li>Medim @sh800</li>
-                    <li>Large @sh1000</li>
-                    <li>Extra-Large @sh1500</li>
-                </ol>
-            </div>
-            <div class ="col-sm-3">
-                <h3>toppings</h3>
-                <ul>
-                    <li>Extra cheese</li>
-                    <li>Onions</li>
-                    <li>Pepperoni</li>
-                    <li>Tomatoes</li>
-                    <li>Green pepper</li>
-                </ul>
-            </div>
-            <div class ="col-sm-3">
-                <h3>Quantity</h3>
-            </div>
-        </div>
-
-    </div>
     {% endblock %}
