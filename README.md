@@ -1,5 +1,4 @@
-#  project name
-PizzaTamTam
+#  PizzaTamTam
 A Flask application that allows users to buy pizza online. It also allows a person to signup to be able to access the functionalities of the application. WORK IN PROGRESS
 
 ![](https://github.com/steve-njuguna-k/Flask-Pizza-Store/blob/master/Screenshot.PNG)
