@@ -4,16 +4,16 @@ A Flask application that allows users to buy pizza online. It also allows a pers
 ![](https://github.com/steve-njuguna-k/Flask-Pizza-Store/blob/master/Screenshot.PNG)
 
 # Project Authors
-STEVE KAMAU
-EDWIKE NYAUNCHO
+- STEVE KAMAU
+- EDWIKE NYAUNCHO
 
 ## Setup Instructions and Installation
 For the application to run, you have to install:
 
--python3.8
--pip
--virtual environment
--Flask
+- python3.8
+- pip
+- virtual environment
+- Flask
 
 - Open terminal
 - Git clone this repository https://github.com/steve-njuguna-k/Flask-Pizza-Store
@@ -24,10 +24,10 @@ For the application to run, you have to install:
 This is a pizza store project using python flask that allows a customer to visit the Pizza TamTam website where you are able to create and register an account and also able to order varieties of pizza options.
 
 ## Technologies Used
--python3.8
--Flask
--HTML
--CSS/Bootstrap
+- python3.8
+- Flask
+- HTML
+- CSS/Bootstrap
 
 ## Known Bugs
 There are no known bugs currently but pull requests are allowed incase you spot a bug
